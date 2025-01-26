@@ -3,9 +3,25 @@
 }
 
 
-body{
-  background-color: #61dafb;
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background: linear-gradient(to left, #ff4400a2, #fc8b0289, #eae4c3bb);
+  font-family: 'Roboto', sans-serif;
 }
+body::before{
+  content: '';
+  position: absolute;
+  background-image: url('istockphoto-2169699402-2048x2048.jpg');
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  height:100%;
+  width: 100%;
+ 
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -61,11 +77,16 @@ body{
   text-align: center;
   margin-bottom: 10px;
 }
-
+.my-{
+  color: #fff;
+}
 h1{
   text-align: center;
 }
 
 #one{
   padding-bottom: 52vh;
+}
+.one{
+  color: #fff;
 }
